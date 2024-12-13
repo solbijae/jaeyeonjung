@@ -1,0 +1,23 @@
+{
+  "proficient": [
+    "JavaScript",
+    "jQuery",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "CSS",
+    "styled-components",
+    "MySQL",
+    "Git"
+  ],
+  "knowledgeable": [
+    "React Native",
+    "Tailwind",
+    "SCSS",
+    "Lexx",
+    "Oracle",
+    "Firebase",
+    "Figma"
+  ]
+}

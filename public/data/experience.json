@@ -1,0 +1,44 @@
+{
+  "experience": [{
+      "company": "KukuDocs",
+      "position": "Full Stack Developer",
+      "dates": "April 2022 - Current",
+      "roles": [{
+          "title": "Web Editor Lead",
+          "skills": ["JavaScript", "jQuery", "Node.js", "MySQL", "ShellScript(Linux)"],
+          "responsibilities": [
+            "Developed and maintained a web editor; optimized for 40+ client companies with features like undo/redo cursor fixes, table resizing, and image optimization.",
+            "Led 3-stage refactoring to improve maintainability and performance, streamlining code, CSS, and APIs.",
+            "Built an installable document platform, implementing features such as tree menus, search, real-time thumbnails, and JSON-based data compression."
+          ]
+        },
+        {
+          "title": "EDMS Admin System",
+          "skills": ["Node.js", "MySQL", "Oracle", "ShellScript(Linux)", "AWS EC2"],
+          "responsibilities": [
+            "Developed an enterprise admin system for a major insurance company, handling 1.5M daily file uploads with optimized multithreading and data encryption (AES256, SHA-512).",
+            "Designed and implemented high-traffic support, secure session handling, and cron-based log monitoring.",
+            "Set up Oracle on AWS EC2, replicating client infrastructure."
+          ]
+        },
+        {
+          "title": "Internal Design System",
+          "skills": ["jQuery", "jQuery UI", "Less"],
+          "responsibilities": [
+            "Standardized UI components, color palettes, and typography for consistent design across solutions, improving usability and visual cohesion."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "AWS",
+      "position": "Program Management Intern",
+      "dates": "July 2020 - July 2021",
+      "responsibilities": [
+        "Managed 3 core programs and led client workshops to support startups tackling public challenges, addressing technical limitations.",
+        "Achieved the AWS Cloud Practitioner certification, strengthening IT knowledge and improving communication with internal teams and clients.",
+        "Developed and executed programs, including the ‘Startup Challenge,’ generating US$30K profit in 2021."
+      ]
+    }
+  ]
+}
