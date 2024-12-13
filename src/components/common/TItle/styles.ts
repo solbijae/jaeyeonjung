@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
+  margin-top: ${({ theme }) => theme.margin.desktop_title};
   overflow: hidden;
   white-space: nowrap;
 `;

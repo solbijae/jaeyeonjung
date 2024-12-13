@@ -8,7 +8,6 @@ const Title = () => {
       <S.Text>JAE YEON JUNG&nbsp;</S.Text>
       <S.Text>JAE YEON JUNG&nbsp;</S.Text>
       <S.Text>JAE YEON JUNG&nbsp;</S.Text>
-
     </S.Container>
   );
 }
