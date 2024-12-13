@@ -20,11 +20,22 @@ export const ThemeConfig = {
   shadows: {},
   typo: {
     desktop_title: typoCreator('8rem', 900, 'normal', 'normal'),
-    desktop_subtitle: typoCreator('1.5rem', 900, 'normal', 'normal'),
+    desktop_description: typoCreator('1.5rem', 900, 'normal', 'normal'),
     desktop_body_B: typoCreator('1.25rem', 700, 'normal', 'normal'),
     desktop_body_R: typoCreator('1.25rem', 400, 'normal', 'normal'),
     desktop_impt: typoCreator('4rem', 900, 'normal', 'normal'),
     desktop_mode: typoCreator('2rem', 900, 'normal', 'normal'),
   },
+
+  margin: {
+    desktop_title: '5rem',
+    desktop_section_title: '3rem',
+  },
+
+  padding: {
+    desktop_section_title: '1rem',
+    desktop_text: '0.5rem'
+
+  }
 };
 export type TColor = keyof (typeof ThemeConfig)['colors'];
