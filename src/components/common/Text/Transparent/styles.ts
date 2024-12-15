@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-
+export const Container = styled.p`
+  border: 1px solid black;
 `;

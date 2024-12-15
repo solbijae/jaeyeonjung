@@ -1,9 +1,14 @@
+import { ReactNode } from 'react';
 import * as S from './styles';
 
-const TransparentText = () => {
+interface TransparentTextProps {
+  children?: ReactNode;
+}
+
+const TransparentText = ({ children }: TransparentTextProps) => {
   return (
     <S.Container>
-
+      {children}
     </S.Container>
   );
 }
