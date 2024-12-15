@@ -22,7 +22,7 @@ const marquee = keyframes`
 export const Text = styled.span`
   will-change: transform;
   display: inline-block;
-  animation: ${marquee} 5s linear infinite;
+  animation: ${marquee} 30s linear infinite;
   white-space: nowrap;
   ${({ theme }) => theme.typo.desktop_title}
 `;
