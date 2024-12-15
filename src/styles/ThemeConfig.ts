@@ -29,7 +29,7 @@ export const ThemeConfig = {
 
   margin: {
     desktop_title: '5rem',
-    desktop_section_title: '3rem',
+    desktop_section_title: '4.2rem',
   },
 
   padding: {
