@@ -6,6 +6,7 @@ export const Container = styled.div`
   gap: ${({ theme }) => theme.margin.desktop_text_gap};
   margin-left: ${({ theme }) => theme.margin.desktop_section_indent};
   padding: ${({ theme }) => theme.padding.desktop_section} 0;
+  ${({ theme }) => theme.typo.desktop_body_16_R};
 `;
 
 export const EduCertWrap = styled.div`
