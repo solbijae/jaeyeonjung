@@ -16,6 +16,6 @@ const SectionTitle = ({ name, children }: SectionTitleProps) => {
       {children}
     </S.Container>
   );
-}
+};
 
 export default SectionTitle;
