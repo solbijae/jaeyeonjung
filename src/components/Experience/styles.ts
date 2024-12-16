@@ -35,7 +35,9 @@ export const Dates = styled.span`
 
 export const Roles = styled.div``;
 
-export const Role = styled.div``;
+export const Role = styled.div`
+  padding-bottom: ${({ theme }) => theme.padding.desktop_text_inner};
+`;
 
 export const RoleTitle = styled.p``;
 
