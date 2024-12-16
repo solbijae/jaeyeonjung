@@ -6,11 +6,7 @@ interface TransparentTextProps {
 }
 
 const TransparentText = ({ children }: TransparentTextProps) => {
-  return (
-    <S.Container>
-      {children}
-    </S.Container>
-  );
-}
+  return <S.Container>{children}</S.Container>;
+};
 
 export default TransparentText;
