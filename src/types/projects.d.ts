@@ -4,9 +4,10 @@ export type ProjectsType = {
     items: {
       name: string;
       skills?: string[];
-      image?: string[];
+      images?: string[];
       about?: string;
       visit?: string;
+      github?: string;
       on_progress: boolean;
     }[];
   }[];
