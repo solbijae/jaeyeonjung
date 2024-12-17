@@ -1,6 +1,7 @@
 import Title from '../components/common/Title';
 import Project from '../components/Project';
 import Mode from '../components/common/Mode';
+import Footer from '../components/common/Footer';
 
 const Work = () => {
     return(
@@ -8,6 +9,7 @@ const Work = () => {
         <Title />
         <Project />
         <Mode />
+        <Footer />
       </>
     );
   }
