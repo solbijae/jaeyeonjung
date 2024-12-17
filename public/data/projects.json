@@ -1,0 +1,38 @@
+{
+  "projects": [{
+      "type": "WEB EDITOR",
+      "items": [{
+        "name": "KUKUDOCS",
+        "skills": ["JavaScript", "Node.js", "MySQL", "ShellScript(Linux)"],
+        "image": ["editor1", "editor2"],
+        "about": "",
+        "visit": "https://woffice.kukudocs.com/ko/editorDemo"
+      }]
+    },
+    {
+      "type": "WEBSITE",
+      "items": [{
+        "name": "PORTFOLIO",
+        "skills": ["React", "Redux", "TypeScript", "styled-components"],
+        "image": ["portfolio1", "portfolio2"],
+        "about": "",
+        "github": "https://github.com/solbijae/jaeyeonjung"
+      }, {
+        "name": "PLUNGE",
+        "skills": ["React", "TypeScript", "styled-components"],
+        "image": ["plunge1", "plunge2"],
+        "about": "",
+        "visit": "https://plunge46.netlify.app/",
+        "github": "https://github.com/solbijae/website_plunge46_cafe"
+      }]
+    }, {
+      "type": "WEB APP",
+      "items": [{
+        "name": "TOUCH",
+        "skills": ["ReactNative", "TypeScript", "styled-components"],
+        "image": ["touch1", "touch2"],
+        "on_progress": true
+      }]
+    }
+  ]
+}
