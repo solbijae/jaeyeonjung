@@ -3,9 +3,9 @@
       "type": "WEB EDITOR",
       "items": [{
         "name": "KUKUDOCS",
-        "skills": ["JavaScript", "Node.js", "MySQL", "ShellScript(Linux)"],
+        "skills": ["JavaScript", "jQuery", "Node.js", "MySQL"],
         "image": ["editor1", "editor2"],
-        "about": "",
+        "about": "KukuDocs Editor is a WYSIWYG web editor that enhances a traditional contenteditable and jQuery-based editor with a Node.js-powered server-side implementation. It introduces a unique KODA file format for saving documents and includes features such as folder management, a trash system, search functionality, and customizable templates for efficient document organization and workflow.",
         "visit": "https://woffice.kukudocs.com/ko/editorDemo"
       }]
     },
@@ -15,13 +15,13 @@
         "name": "PORTFOLIO",
         "skills": ["React", "Redux", "TypeScript", "styled-components"],
         "image": ["portfolio1", "portfolio2"],
-        "about": "",
+        "about": "My Portfolio Website is a responsive and immersive web project designed to showcase both creativity and functionality. Built with a component-based architecture, it ensures high reusability and maintainability. The site features theme switching and seamless page transitions using Redux, enhancing user interactivity. Dynamic elements like marquee animations, skew effects, and interactive pages deliver an engaging experience, while maintaining a clean and clear layout to highlight content effectively.",
         "github": "https://github.com/solbijae/jaeyeonjung"
       }, {
         "name": "PLUNGE",
         "skills": ["React", "TypeScript", "styled-components"],
         "image": ["plunge1", "plunge2"],
-        "about": "",
+        "about": "The Plunge Cafe Website Renewal project focuses on enhancing the cozy and inviting atmosphere of the cafe while improving usability. The previous website lacked visual warmth and did not effectively showcase the menu. I introduced a responsive design for smooth navigation across all devices and utilized Link to allow users to quickly access key sections. Additionally, the menu was structured with JSON data for better organization and easier updates.",
         "visit": "https://plunge46.netlify.app/",
         "github": "https://github.com/solbijae/website_plunge46_cafe"
       }]
@@ -29,8 +29,9 @@
       "type": "WEB APP",
       "items": [{
         "name": "TOUCH",
-        "skills": ["ReactNative", "TypeScript", "styled-components"],
+        "skills": ["ReactNative", "TypeScript", "styled-components", "firebase"],
         "image": ["touch1", "touch2"],
+        "about": "Touch is designed to bring families closer through daily photo sharing. Built with Firebase for database management, the app allows users to create private rooms via SSO login and share photos with family members. Photos are stored for only 24 hours, encouraging daily interactions while optimizing database performance. To ensure accessibility for all ages, the app features a simple interface, intuitive language, clear layouts, and step-by-step guidance. By minimizing complexity, the app makes it easy for everyone to connect effortlessly and share meaningful moments every day.",
         "on_progress": true
       }]
     }
