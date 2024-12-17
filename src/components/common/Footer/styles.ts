@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* 원하는 높이 설정 */
+  height: 100px;
 `;
 
 export const CopyRight = styled.p`
