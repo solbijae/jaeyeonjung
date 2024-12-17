@@ -1,11 +1,12 @@
+import { ReactNode } from 'react';
 import * as S from './styles';
 
-const ColoredText = () => {
-  return (
-    <S.Container>
+interface ColoredTextProps {
+  children?: ReactNode;
+}
 
-    </S.Container>
-  );
+const ColoredText = ({ children }: ColoredTextProps) => {
+  return <S.Container>{children}</S.Container>;
 }
 
 export default ColoredText;
