@@ -5,8 +5,8 @@ import Theme from './Theme';
 const Mode = () => {
   return (
     <S.Container>
-      <Tabs />
       <Theme />
+      <Tabs />
     </S.Container>
   );
 };
