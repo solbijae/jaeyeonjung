@@ -14,4 +14,5 @@ export const InnerContent = styled.div<{ isAnimating: boolean }>`
   transform: scale(${({ isAnimating }) => (isAnimating ? 0.9 : 1)});
   transition: transform 0.5s ease;
   background: ${({ isAnimating }) => (isAnimating ? '#fff' : 'transparent')};
+  will-change: transform;
 `;
