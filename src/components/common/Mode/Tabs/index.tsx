@@ -11,13 +11,13 @@ const Tabs = () => {
 
   const toggleHandler = () => {
     dispatch(setAnimating(true));
-    dispatch(toggleTheme());
   };
 
   useEffect(() => {
     if (isAnimating) {
       const timer = setTimeout(() => {
         dispatch(setAnimating(false));
+        dispatch(toggleTheme());
       }, 1000);
       return () => clearTimeout(timer);
     }
