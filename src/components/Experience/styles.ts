@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const ItemWrap = styled.div`
   &:not(:first-child) {
-    padding-top: ${({ theme }) => theme.padding.desktop_section_title};
+    padding-top: ${({ theme }) => theme.padding.desktop_section};
   }
 `
 
