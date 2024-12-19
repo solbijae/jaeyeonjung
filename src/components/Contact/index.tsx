@@ -4,10 +4,34 @@ import TransparentText from '../common/Text/Transparent';
 const Contact = () => {
   return (
     <S.Container>
-      <TransparentText>
+      <TransparentText
+        customStyle={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '7rem',
+        }}
+        hoverStyle={{
+          gridColumn: 'span 2',
+          backgroundColor: 'black',
+          color: 'white',
+        }}
+      >
         <S.ContactInfo href="mailto:jaeyeonjung3@gmail.com">EMAIL</S.ContactInfo>
       </TransparentText>
-      <TransparentText>
+      <TransparentText
+        customStyle={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '7rem',
+        }}
+        hoverStyle={{
+          gridColumn: 'span 2',
+          backgroundColor: 'black',
+          color: 'white',
+        }}
+      >
         <S.ContactInfo
           href="https://www.linkedin.com/in/jungjaeyeon/"
           target="_blank"
@@ -16,7 +40,19 @@ const Contact = () => {
           LINKEDIN
         </S.ContactInfo>
       </TransparentText>
-      <TransparentText>
+      <TransparentText
+        customStyle={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '7rem',
+        }}
+        hoverStyle={{
+          gridColumn: 'span 2',
+          backgroundColor: 'black',
+          color: 'white',
+        }}
+      >
         <S.ContactInfo
           href="https://github.com/solbijae"
           target="_blank"
