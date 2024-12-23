@@ -12,8 +12,15 @@ export const Container = styled.div.attrs<ContainerProps>(({ customStyle }) => (
   margin-right: ${({ theme }) => theme.margin.desktop_text_gap};
   border: 1px solid ${({ theme }) => theme.colors.black};
   border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 
   &:hover {
     ${({ hoverStyle }) => hoverStyle && { ...hoverStyle }}
+
+    a {
+      color: inherit;
+    }
   }
 `;
+  
