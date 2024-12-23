@@ -5,6 +5,7 @@ export const Container = styled.div``;
 export const Circle = styled.div`
   width: 34px;
   height: 34px;
+  background-color: ${({ theme }) => theme.colors.white};
   border: 1px solid ${({ theme }) => theme.colors.black};
   border-radius: 50%;
 `;
