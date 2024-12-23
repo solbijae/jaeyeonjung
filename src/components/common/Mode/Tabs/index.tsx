@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from './styles';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleTheme, setAnimating } from '../../../../store/slices/themeSlice';
@@ -6,8 +6,12 @@ import { RootState } from '../../../../store';
 
 const Tabs = () => {
   const dispatch = useDispatch();
-  const profileMode = useSelector((state: RootState) => state.theme.profileMode);
-  const isAnimating = useSelector((state: RootState) => state.theme.isAnimating);
+  const profileMode = useSelector(
+    (state: RootState) => state.theme.profileMode,
+  );
+  const isAnimating = useSelector(
+    (state: RootState) => state.theme.isAnimating,
+  );
 
   const toggleHandler = () => {
     dispatch(setAnimating(true));

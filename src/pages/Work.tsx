@@ -4,14 +4,14 @@ import Mode from '../components/common/Mode';
 import Footer from '../components/common/Footer';
 
 const Work = () => {
-    return(
-      <>
-        <Title />
-        <Project />
-        <Mode />
-        <Footer />
-      </>
-    );
-  }
-  
-  export default Work; 
+  return (
+    <>
+      <Title />
+      <Project />
+      <Mode />
+      <Footer />
+    </>
+  );
+};
+
+export default Work;

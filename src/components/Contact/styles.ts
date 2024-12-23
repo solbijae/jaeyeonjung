@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Item = styled.div<ItemProps>`
-  flex: ${({ isHovered }) => isHovered ? 1 : 0.5};
+  flex: ${({ isHovered }) => (isHovered ? 1 : 0.5)};
   transition: flex 0.3s ease;
 `;
 

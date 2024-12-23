@@ -7,7 +7,6 @@ export const Container = styled.div<{ isAnimating: boolean }>`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
 `;
 
 export const InnerContent = styled.div<{ isAnimating: boolean }>`

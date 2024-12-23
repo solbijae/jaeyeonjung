@@ -12,7 +12,7 @@ export const ItemWrapper = styled.div<{ hasMultipleItems: boolean }>`
   padding: ${({ theme }) => theme.padding.desktop_project} 0;
   ${({ theme }) => theme.typo.desktop_body_16_R};
 
-  ${({ hasMultipleItems }) => 
+  ${({ hasMultipleItems }) =>
     hasMultipleItems &&
     css`
       border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
@@ -20,8 +20,7 @@ export const ItemWrapper = styled.div<{ hasMultipleItems: boolean }>`
       &:last-child {
         border-bottom: none;
       }
-    `
-  }
+    `}
 `;
 
 export const ProjectName = styled.p`
@@ -36,7 +35,6 @@ export const SkillsWrap = styled.div`
 export const MainWrap = styled.div`
   display: flex;
   gap: ${({ theme }) => theme.margin.desktop_section_indent};
-
 `;
 
 export const ProjectAbout = styled.p`

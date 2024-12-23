@@ -2,14 +2,27 @@ import { ReactNode, CSSProperties } from 'react';
 import * as S from './styles';
 
 interface TransparentTextProps {
-  customStyle?: CSSProperties; // React의 CSSProperties를 사용
-  hoverStyle?: CSSProperties; // hover 상태의 스타일 추가
+  customStyle?: CSSProperties;
+  hoverStyle?: CSSProperties;
   children?: ReactNode;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
-const TransparentText = ({ customStyle, hoverStyle, children }: TransparentTextProps) => {
+const TransparentText = ({
+  customStyle,
+  hoverStyle,
+  children,
+  onMouseEnter,
+  onMouseLeave,
+}: TransparentTextProps) => {
   return (
-    <S.Container style={customStyle} hoverStyle={hoverStyle}>
+    <S.Container
+      style={customStyle}
+      hoverStyle={hoverStyle}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {children}
     </S.Container>
   );

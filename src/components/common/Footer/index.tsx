@@ -6,6 +6,6 @@ const Footer = () => {
       <S.CopyRight>© 2024 JAE YEON JUNG</S.CopyRight>
     </S.Container>
   );
-}
+};
 
 export default Footer;

@@ -15,4 +15,4 @@ export const Semicircle = styled.div`
   height: 34px;
   background-color: ${({ theme }) => theme.colors.black};
   border-radius: 17px 0 0 17px;
-`; 
+`;

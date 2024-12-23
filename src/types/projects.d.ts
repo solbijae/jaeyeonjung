@@ -11,4 +11,4 @@ export type ProjectsType = {
       on_progress: boolean;
     }[];
   }[];
-}
+};

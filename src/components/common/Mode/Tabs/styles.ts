@@ -35,7 +35,7 @@ export const ToggleCircle = styled.div<{ profileMode: boolean }>`
   white-space: nowrap;
   width: 90px;
   height: 38px;
-  background-color:  ${({ theme }) => theme.colors.white};;
+  background-color: ${({ theme }) => theme.colors.white};
   border-radius: 50px;
   transition: left 0.3s ease;
 `;

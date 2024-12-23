@@ -5,15 +5,18 @@ interface ContainerProps {
   hoverStyle?: React.CSSProperties; // React의 CSSProperties 사용
 }
 
-export const Container = styled.div.attrs<ContainerProps>(({ customStyle }) => ({
-  style: customStyle,
-}))<ContainerProps>`
+export const Container = styled.div.attrs<ContainerProps>(
+  ({ customStyle }) => ({
+    style: customStyle,
+  }),
+)<ContainerProps>`
   padding: ${({ theme }) => theme.padding.desktop_text_inner};
   margin-right: ${({ theme }) => theme.margin.desktop_text_gap};
   border: 1px solid ${({ theme }) => theme.colors.black};
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
   &:hover {
     ${({ hoverStyle }) => hoverStyle && { ...hoverStyle }}
@@ -23,4 +26,3 @@ export const Container = styled.div.attrs<ContainerProps>(({ customStyle }) => (
     }
   }
 `;
-  

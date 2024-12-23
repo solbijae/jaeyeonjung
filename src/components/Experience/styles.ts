@@ -13,7 +13,7 @@ export const ItemWrap = styled.div`
   &:not(:first-child) {
     padding-top: ${({ theme }) => theme.padding.desktop_section};
   }
-`
+`;
 
 export const Company = styled.p`
   padding-bottom: ${({ theme }) => theme.padding.desktop_section_title};
@@ -25,13 +25,9 @@ export const ItemTitleWrap = styled.div`
   padding-bottom: ${({ theme }) => theme.padding.desktop_text_inner};
 `;
 
-export const Position = styled.span`
+export const Position = styled.span``;
 
-`;
-
-export const Dates = styled.span`
-
-`;
+export const Dates = styled.span``;
 
 export const Roles = styled.div``;
 
@@ -45,5 +41,4 @@ export const Responsibilities = styled.ul``;
 
 export const Responsibility = styled.li`
   padding-left: ${({ theme }) => theme.padding.desktop_text_inner};
-
 `;

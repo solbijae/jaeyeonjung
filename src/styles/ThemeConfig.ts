@@ -37,7 +37,7 @@ export const ThemeConfig = {
     desktop_section_indent: '5.7rem',
     desktop_subtitle: '1rem',
     desktop_text_gap: '0.5rem',
-    desktop_footer: '8rem'
+    desktop_footer: '8rem',
   },
 
   padding: {

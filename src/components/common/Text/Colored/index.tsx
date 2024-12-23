@@ -7,6 +7,6 @@ interface ColoredTextProps {
 
 const ColoredText = ({ children }: ColoredTextProps) => {
   return <S.Container>{children}</S.Container>;
-}
+};
 
 export default ColoredText;

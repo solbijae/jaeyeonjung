@@ -19,47 +19,48 @@ const Project = () => {
       // 각 프로젝트 이미지 그룹에 대해 별도의 타임라인 생성
       const tl = gsap.timeline({
         paused: true,
-        defaults: { duration: 0.5 }
+        defaults: { duration: 0.5 },
       });
-    
+
       projectImages.forEach((image, index) => {
         if (image) {
-          const transformTo = index === 0 
-            ? 'translate(-70%, -65%) rotate(-3deg)'
-            : 'translate(-35%, -100%) rotate(2deg)';
-          
+          const transformTo =
+            index === 0
+              ? 'translate(-70%, -65%) rotate(-3deg)'
+              : 'translate(-35%, -100%) rotate(2deg)';
+
           const defaultTransform = 'translate(-50%, -100%)';
-          
+
           // 초기 상태 설정
           gsap.set(image, {
-            transform: defaultTransform
+            transform: defaultTransform,
           });
-    
+
           // 각 이미지에 대한 ScrollTrigger 생성
           ScrollTrigger.create({
             trigger: image,
             // 트리거 영역을 좀 더 위쪽으로 조정
             start: 'top 85%', // 요소가 화면 하단 근처에 도달했을 때
             end: 'bottom 15%', // 요소가 화면 상단 근처를 벗어나기 직전
-            onToggle: self => {
+            onToggle: (self) => {
               if (self.isActive) {
                 // 뷰포트 안에 있을 때
                 gsap.to(image, {
                   transform: transformTo,
                   duration: 0.5,
-                  overwrite: true
+                  overwrite: true,
                 });
               } else {
                 // 뷰포트 밖에 있을 때
                 gsap.to(image, {
                   transform: defaultTransform,
                   duration: 0.5,
-                  overwrite: true
+                  overwrite: true,
                 });
               }
             },
             // toggleActions를 사용하여 스크롤 방향에 관계없이 일관된 동작 보장
-            toggleActions: "play none play reverse"
+            toggleActions: 'play none play reverse',
           });
         }
       });
@@ -109,14 +110,22 @@ const Project = () => {
                   <S.LinkWrap>
                     {item.visit && (
                       <ColoredText>
-                        <a href={item.visit} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={item.visit}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Visit
                         </a>
                       </ColoredText>
                     )}
                     {item.github && (
                       <ColoredText>
-                        <a href={item.github} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={item.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           GitHub
                         </a>
                       </ColoredText>
