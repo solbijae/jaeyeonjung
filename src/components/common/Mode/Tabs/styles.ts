@@ -16,7 +16,7 @@ export const ButtonLabel = styled.label`
   justify-content: space-between;
   padding: 5px;
   align-items: center;
-  width: 162px;
+  width: 147px;
   height: 48px;
   border-radius: 50px;
   background-color: ${({ theme }) => theme.colors.black};
@@ -26,7 +26,7 @@ export const ButtonLabel = styled.label`
 export const ToggleCircle = styled.div<{ profileMode: boolean }>`
   position: absolute;
   top: 50%;
-  left: ${({ profileMode }) => (profileMode ? '10px' : '57px')};
+  left: ${({ profileMode }) => (profileMode ? '10px' : '47px')};
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
