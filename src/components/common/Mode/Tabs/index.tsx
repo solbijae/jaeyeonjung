@@ -23,6 +23,10 @@ const Tabs = () => {
     }
   }, [isAnimating, dispatch]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [profileMode]);
+
   return (
     <S.Container>
       <S.CheckBox
