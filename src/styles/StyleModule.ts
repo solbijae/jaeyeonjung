@@ -12,5 +12,4 @@ export const Container = styled.div<{ isAnimating: boolean }>`
 
 export const InnerContent = styled.div<{ isAnimating: boolean }>`
   background-color: ${({ theme }) => theme.colors.white};
-  will-change: transform;
 `;
