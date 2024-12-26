@@ -6,6 +6,7 @@ export const Container = styled.div`
   gap: ${({ theme }) => theme.margin.desktop_subtitle};
   margin-left: ${({ theme }) => theme.margin.desktop_section_indent};
   padding: ${({ theme }) => theme.padding.desktop_section} 0;
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const SkillsWrap = styled.div`

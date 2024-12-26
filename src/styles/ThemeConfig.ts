@@ -12,11 +12,37 @@ const typoCreator = (
     line-height: ${lineHeight};
   `;
 };
-export const ThemeConfig = {
+
+const colors = {
+  bnw: {
+    background: '#FFFFFF',
+    light: '#656565',
+    dark: '#000000',
+    text: '#000000',
+    textDark: '#000000',
+    textBox: '#FFFFFF',
+    textBoxBorder: '#000000',
+  },
+  color: {
+    background: '#0A0A0C',
+    light: '#FFFCF8',
+    dark: '#4ADE80',
+    text: '#FFFCF8',
+    textDark: '#0A0A0C',
+    textBox: '#FFFCF8',
+    textBoxBorder: '#FFFCF8',
+  }
+};
+
+export const ThemeConfig = (mode: 'bnw' | 'color') => ({
   colors: {
-    white: '#FFFFFF',
-    gray: '#656565',
-    black: '#000000',
+    background: colors[mode].background,
+    light: colors[mode].light,
+    dark: colors[mode].dark,
+    text: colors[mode].text,
+    textBox: colors[mode].textBox,
+    textDark: colors[mode].textDark,
+    textBoxBorder: colors[mode].textBoxBorder,
   },
   shadows: {},
   typo: {
@@ -30,7 +56,6 @@ export const ThemeConfig = {
     desktop_impt: typoCreator('4rem', 900, 'normal', 'normal'),
     desktop_mode: typoCreator('2rem', 900, 'normal', 'normal'),
   },
-
   margin: {
     desktop_title: '3rem',
     desktop_section_title: '6rem',
@@ -39,12 +64,12 @@ export const ThemeConfig = {
     desktop_text_gap: '0.5rem',
     desktop_footer: '8rem',
   },
-
   padding: {
     desktop_project: '5.5rem',
     desktop_section: '3.5rem',
     desktop_section_title: '1rem',
     desktop_text_inner: '0.5rem',
   },
-};
-export type TColor = keyof (typeof ThemeConfig)['colors'];
+});
+
+// export type TColor = keyof (typeof ThemeConfig)['colors'];

@@ -10,5 +10,5 @@ export const Container = styled.div`
 
 export const CopyRight = styled.p`
   ${({ theme }) => theme.typo.desktop_body_12_R};
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.light};
 `;

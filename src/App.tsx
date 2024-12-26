@@ -14,7 +14,7 @@ const AppContent = () => {
   const isAnimating = useSelector(
     (state: RootState) => state.theme.isAnimating,
   );
-
+  
   const pageVariants = {
     enter: (direction: number) => ({
       x: direction > 0 ? '-99%' : '99%',

@@ -6,13 +6,18 @@ import useFetchData from '../../hooks/useFetchData';
 import { ProjectsType } from '../../types/projects';
 import SectionTitle from '../common/SectionTitle';
 import TransparentText from '../common/Text/Transparent';
-import ColoredText from '../common/Text/Colored';
+import { ThemeConfig } from '../../styles/ThemeConfig';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Project = () => {
   const { data } = useFetchData<ProjectsType>('/data/projects.json');
   const imageRefs = useRef<{ [key: string]: HTMLImageElement[] }>({});
+  const bnwTheme = useSelector((state: RootState) => state.theme.bnwTheme);
+  const currentMode = bnwTheme ? 'bnw' : 'color';
+  const theme = ThemeConfig(currentMode);
 
   useEffect(() => {
     Object.values(imageRefs.current).forEach((projectImages) => {
@@ -82,7 +87,14 @@ const Project = () => {
                   {item.skills && item.skills.length > 0 && (
                     <S.SkillsWrap>
                       {item.skills.map((skill, index) => (
-                        <TransparentText key={index}>{skill}</TransparentText>
+                        <TransparentText 
+                          key={index}
+                          customStyle={{
+                            backgroundColor: theme.colors.textBox,
+                            color: theme.colors.textDark,
+                            border: `1px solid ${theme.colors.textBoxBorder}`
+                          }}
+                        >{skill}</TransparentText>
                       ))}
                     </S.SkillsWrap>
                   )}
@@ -109,7 +121,14 @@ const Project = () => {
                   )}
                   <S.LinkWrap>
                     {item.visit && (
-                      <ColoredText>
+                      <TransparentText
+                        customStyle={{
+                          backgroundColor: theme.colors.dark,
+                          color: theme.colors.background,
+                          border: `1px solid ${theme.colors.dark}`,
+                          borderRadius: '20px',
+                        }}
+                      >
                         <a
                           href={item.visit}
                           target="_blank"
@@ -117,10 +136,17 @@ const Project = () => {
                         >
                           Visit
                         </a>
-                      </ColoredText>
+                      </TransparentText>
                     )}
                     {item.github && (
-                      <ColoredText>
+                      <TransparentText
+                        customStyle={{
+                          backgroundColor: theme.colors.dark,
+                          color: theme.colors.background,
+                          border: `1px solid ${theme.colors.dark}`,
+                          borderRadius: '18px',
+                        }}
+                      >
                         <a
                           href={item.github}
                           target="_blank"
@@ -128,7 +154,7 @@ const Project = () => {
                         >
                           GitHub
                         </a>
-                      </ColoredText>
+                      </TransparentText>
                     )}
                   </S.LinkWrap>
                 </S.ItemWrapper>

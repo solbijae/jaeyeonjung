@@ -12,17 +12,18 @@ export const Container = styled.div.attrs<ContainerProps>(
 )<ContainerProps>`
   padding: ${({ theme }) => theme.padding.desktop_text_inner};
   margin-right: ${({ theme }) => theme.margin.desktop_text_gap};
-  border: 1px solid ${({ theme }) => theme.colors.black};
+  border: 1px solid ${({ theme }) => theme.colors.dark};
   border-radius: 5px;
+  /* color: ${({ theme }) => theme.colors.text}; */
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
 
+  a {
+    color: inherit;
+  }
+
   &:hover {
     ${({ hoverStyle }) => hoverStyle && { ...hoverStyle }}
-
-    a {
-      color: inherit;
-    }
   }
 `;

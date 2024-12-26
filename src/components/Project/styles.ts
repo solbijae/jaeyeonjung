@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   padding-top: ${({ theme }) => theme.margin.desktop_section_title};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const ItemWrapper = styled.div<{ hasMultipleItems: boolean }>`
@@ -15,7 +16,7 @@ export const ItemWrapper = styled.div<{ hasMultipleItems: boolean }>`
   ${({ hasMultipleItems }) =>
     hasMultipleItems &&
     css`
-      border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+      border-bottom: 1px solid ${({ theme }) => theme.colors.light};
 
       &:last-child {
         border-bottom: none;
@@ -55,7 +56,7 @@ export const Image = styled.img`
   height: 15rem;
   object-position: top;
   object-fit: cover;
-  border: 1px solid ${({ theme }) => theme.colors.black};
+  border: 1px solid ${({ theme }) => theme.colors.textBoxBorder};
   /* transform: translate(-35%, -120%) rotate(2deg); */
 
   &:first-child {

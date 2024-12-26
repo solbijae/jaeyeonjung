@@ -1,7 +1,7 @@
 import * as S from './styles';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleTheme, setAnimating } from '../../../../store/slices/themeSlice';
+import { toggleTabs, setAnimating } from '../../../../store/slices/themeSlice';
 import { RootState } from '../../../../store';
 
 const Tabs = () => {
@@ -21,7 +21,7 @@ const Tabs = () => {
     if (isAnimating) {
       const timer = setTimeout(() => {
         dispatch(setAnimating(false));
-        dispatch(toggleTheme());
+        dispatch(toggleTabs());
       }, 1000);
       return () => clearTimeout(timer);
     }

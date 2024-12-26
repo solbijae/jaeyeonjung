@@ -19,7 +19,7 @@ export const ButtonLabel = styled.label`
   width: 147px;
   height: 48px;
   border-radius: 50px;
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.dark};
   cursor: pointer;
 `;
 
@@ -35,7 +35,7 @@ export const ToggleCircle = styled.div<{ profileMode: boolean }>`
   white-space: nowrap;
   width: 90px;
   height: 38px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.background};
   border-radius: 50px;
   transition: left 0.3s ease;
 `;
@@ -57,5 +57,5 @@ export const CircleText = styled.span<{ profileMode: boolean }>`
   display: inline-block;
   animation: ${marquee} 30s linear infinite;
   white-space: nowrap;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.dark};
 `;

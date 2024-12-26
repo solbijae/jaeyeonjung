@@ -27,8 +27,8 @@ export const Container = styled.div`
 export const Circle = styled.div`
   width: 34px;
   height: 34px;
-  background-color: ${({ theme }) => theme.colors.white};
-  border: 1px solid ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.background};
+  border: 1px solid ${({ theme }) => theme.colors.dark};
   border-radius: 50%;
   cursor: pointer;
   position: relative;
@@ -51,7 +51,7 @@ export const Circle = styled.div`
 export const Semicircle = styled.div<{ $rotation: number}>`
   width: 17px;
   height: 34px;
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.dark};
   border-radius: 17px 0 0 17px;
   transition: transform 0.5s ease;
   transform-origin: right center;

@@ -1,6 +1,9 @@
 import * as S from './styles';
 import TransparentText from '../common/Text/Transparent';
 import { useState } from 'react';
+import { ThemeConfig } from '../../styles/ThemeConfig';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store';
 
 const Contact = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -10,6 +13,10 @@ const Contact = () => {
     { href: 'https://www.linkedin.com/in/jungjaeyeon/', text: 'LINKEDIN' },
     { href: 'https://github.com/solbijae', text: 'GITHUB' },
   ];
+
+  const bnwTheme = useSelector((state: RootState) => state.theme.bnwTheme);
+  const currentMode = bnwTheme ? 'bnw' : 'color';
+  const theme = ThemeConfig(currentMode);
 
   return (
     <S.Container>
@@ -22,10 +29,16 @@ const Contact = () => {
               alignItems: 'center',
               height: '7rem',
               width: '100%',
+              fontSize: '2rem',
+              fontWeight: '900',
+              backgroundColor: theme.colors.textBox,
+              color: theme.colors.textDark,
+              border: `1px solid ${theme.colors.textBoxBorder}`
             }}
             hoverStyle={{
-              backgroundColor: 'black',
-              color: 'white',
+              backgroundColor: `${theme.colors.dark} !important`,
+              color: `${theme.colors.background} !important`,
+              border: `1px solid ${theme.colors.dark} !important`
             }}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}

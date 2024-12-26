@@ -17,4 +17,5 @@ export const SectionWrap = styled.div`
 export const Title = styled.div`
   padding-right: ${({ theme }) => theme.padding.desktop_section_title};
   ${({ theme }) => theme.typo.desktop_body_20_B};
+  color: ${({ theme }) => theme.colors.text};
 `;

@@ -1,11 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 interface ThemeState {
+  bnwTheme: boolean;
   profileMode: boolean;
   isAnimating: boolean;
 }
 
 const initialState: ThemeState = {
+  bnwTheme: true,
   profileMode: true,
   isAnimating: false,
 };
@@ -15,6 +17,9 @@ export const themeSlice = createSlice({
   initialState,
   reducers: {
     toggleTheme: (state) => {
+      state.bnwTheme = !state.bnwTheme;
+    },
+    toggleTabs: (state) => {
       state.profileMode = !state.profileMode;
     },
     setAnimating: (state, action) => {
@@ -23,5 +28,5 @@ export const themeSlice = createSlice({
   },
 });
 
-export const { toggleTheme, setAnimating } = themeSlice.actions;
+export const { toggleTheme, toggleTabs, setAnimating } = themeSlice.actions;
 export default themeSlice.reducer;

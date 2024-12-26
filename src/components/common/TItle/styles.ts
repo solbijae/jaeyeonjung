@@ -25,4 +25,5 @@ export const Text = styled.span`
   animation: ${marquee} 30s linear infinite;
   white-space: nowrap;
   ${({ theme }) => theme.typo.desktop_title}
+  color: ${({ theme }) => theme.colors.dark}
 `;
