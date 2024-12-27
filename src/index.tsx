@@ -1,13 +1,14 @@
-import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { useSelector } from 'react-redux'; // 올바르게 임포트
-import { Provider } from 'react-redux'; // Redux Provider 추가
+import { useSelector } from 'react-redux';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react'; // PersistGate 추가
 import mediaQueries from './styles/MediaQuery';
 import { ThemeConfig } from './styles/ThemeConfig';
 import { GlobalStyle } from './styles/GlobalStyle';
 import App from './App';
-import { store, RootState } from './store'; // store 임포트
+import { store, persistor, RootState } from './store'; // persistor 임포트
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -26,9 +27,11 @@ const RootItem = () => {
   );
 };
 
-// Redux Provider로 RootItem 감싸기
 root.render(
   <Provider store={store}>
-    <RootItem />
+    {/* PersistGate로 감싸기 */}
+    <PersistGate loading={null} persistor={persistor}>
+      <RootItem />
+    </PersistGate>
   </Provider>
 );
