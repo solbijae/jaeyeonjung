@@ -41,6 +41,7 @@ export const Circle = styled.div`
     opacity: 0;
     white-space: nowrap;
     animation: none;
+    color: ${({ theme }) => theme.colors.textBoxBorder};
   }
 
   &:hover::after {
