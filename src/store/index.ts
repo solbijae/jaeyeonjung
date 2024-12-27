@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // localStorage에 저장
+import storage from 'redux-persist/lib/storage/session'; // localStorage 대신 sessionStorage 사용
 import themeReducer from './slices/themeSlice';
 
 const persistConfig = {
