@@ -69,4 +69,5 @@ export const Image = styled.img`
 
 export const LinkWrap = styled.div`
   display: flex;
+  cursor: pointer;
 `;
