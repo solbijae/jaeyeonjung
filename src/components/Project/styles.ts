@@ -25,12 +25,13 @@ export const ItemWrapper = styled.div<{ hasMultipleItems: boolean }>`
 `;
 
 export const ProjectName = styled.p`
+  padding-bottom: ${({ theme }) => theme.padding.desktop_section_title};
   ${({ theme }) => theme.typo.desktop_body_16_B};
 `;
 
 export const SkillsWrap = styled.div`
   display: flex;
-  padding-bottom: ${({ theme }) => theme.padding.desktop_section_title};
+  padding-bottom: ${({ theme }) => theme.padding.desktop_section};
 `;
 
 export const MainWrap = styled.div`
@@ -39,6 +40,7 @@ export const MainWrap = styled.div`
 `;
 
 export const ProjectAbout = styled.p`
+  padding-bottom: ${({ theme }) => theme.padding.desktop_section_title};
   width: 33%;
 `;
 

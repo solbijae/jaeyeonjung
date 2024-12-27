@@ -31,8 +31,8 @@ const Project = () => {
         if (image) {
           const transformTo =
             index === 0
-              ? 'translate(-70%, -65%) rotate(-3deg)'
-              : 'translate(-35%, -100%) rotate(2deg)';
+              ? 'translate(-70%, -95%) rotate(-3deg)'
+              : 'translate(-35%, -140%) rotate(2deg)';
 
           const defaultTransform = 'translate(-50%, -100%)';
 
