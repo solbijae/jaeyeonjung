@@ -1,9 +1,12 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
+  position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  bottom: 100px;
+  width: 90vw;
 `;
 
 export const CheckBox = styled.input`
