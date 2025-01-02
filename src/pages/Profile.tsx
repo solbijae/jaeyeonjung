@@ -1,4 +1,5 @@
-import Title from '../components/common/Title';
+// import Title from '../components/common/Title';
+import Title from 'components/common/Title';
 import Description from '../components/Description';
 import SectionTitle from '../components/common/SectionTitle';
 import Skills from '../components/Skills';
