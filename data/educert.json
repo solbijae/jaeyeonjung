@@ -1,0 +1,23 @@
+{
+  "edu_cert": [{
+      "title": "Meta Front-End Developer",
+      "institution": "Coursera",
+      "year": "2024"
+    },
+    {
+      "title": "Engineer Information Processing",
+      "institution": "Human Resources Development Service of Korea",
+      "year": "2024"
+    },
+    {
+      "title": "AWS Cloud Practitioner",
+      "institution": "AWS",
+      "year": "2021 - 2024"
+    },
+    {
+      "title": "International Studies",
+      "institution": "Kyung Hee University",
+      "year": "2016 - 2020"
+    }
+  ]
+}

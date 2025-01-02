@@ -1,0 +1,23 @@
+{
+  "PROFICIENT": [
+    "JavaScript",
+    "jQuery",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "CSS",
+    "styled-components",
+    "MySQL",
+    "Git"
+  ],
+  "KNOWLEDGEABLE": [
+    "React Native",
+    "Tailwind",
+    "SCSS",
+    "Less",
+    "Oracle",
+    "Firebase",
+    "Figma"
+  ]
+}
