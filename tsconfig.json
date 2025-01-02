@@ -7,9 +7,10 @@
       "esnext"
     ],
     "baseUrl": "src",
-    "paths": {
-      "*": ["*"]
-    },
+    "typeRoots": ["node_modules/@types"],
+    // "paths": {
+    //   "*": ["*"]
+    // },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

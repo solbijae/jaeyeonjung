@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import * as S from './styles';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -113,7 +113,7 @@ const Project = () => {
                               imageRefs.current[item.name][index] = el;
                             }
                           }}
-                          src={`/images/${image}.png`}
+                          src={`images/${image}.png`}
                           alt={`image-${index}`}
                         />
                       ))}
