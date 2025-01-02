@@ -35,7 +35,7 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://bam-j.github.io/pages/",
+  "homepage": "https://solbijae.github.io/jaeyeonjung/",
   "eslintConfig": {
     "extends": [
       "react-app",

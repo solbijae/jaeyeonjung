@@ -13,7 +13,7 @@ import { RootState } from '../../store';
 gsap.registerPlugin(ScrollTrigger);
 
 const Project = () => {
-  const { data } = useFetchData<ProjectsType>('/data/projects.json');
+  const { data } = useFetchData<ProjectsType>('data/projects.json');
   const imageRefs = useRef<{ [key: string]: HTMLImageElement[] }>({});
   const bnwTheme = useSelector((state: RootState) => state.theme.bnwTheme);
   const currentMode = bnwTheme ? 'bnw' : 'color';

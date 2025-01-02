@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
 
 const EduCert = () => {
-  const { data } = useFetchData<EducertType>('/data/educert.json');
+  const { data } = useFetchData<EducertType>('data/educert.json');
   const bnwTheme = useSelector((state: RootState) => state.theme.bnwTheme);
   const currentMode = bnwTheme ? 'bnw' : 'color';
   const theme = ThemeConfig(currentMode);

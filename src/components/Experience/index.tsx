@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
 
 const Experience = () => {
-  const { data } = useFetchData<ExperienceType>('/data/experience.json');
+  const { data } = useFetchData<ExperienceType>('data/experience.json');
   const bnwTheme = useSelector((state: RootState) => state.theme.bnwTheme);
   const currentMode = bnwTheme ? 'bnw' : 'color';
   const theme = ThemeConfig(currentMode);
